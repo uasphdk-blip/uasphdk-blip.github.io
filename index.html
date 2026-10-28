@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PHP Private Backup</title><link rel="stylesheet" href="style.css"></head>
+<body><main><p class="eyebrow">Personal-use utility</p><h1>PHP Private Backup</h1>
+<p class="lead">Encrypted backups and recovery checks for a privately managed application.</p>
+<nav aria-label="Information pages"><a href="index.html" aria-current="page">Home</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></nav>
+<section><h2>What the application does</h2><p>This utility prepares encrypted application backups, stores them in the account owner's private Google Drive, and checks that stored copies can be downloaded intact. Its setup supports independent database restore checks and managed backup retention.</p><p>It is intended for the owner's own accounts. Scheduled operations are enabled only after their configuration and first cloud execution have been verified.</p></section>
+<section><h2>Google Drive access</h2><p>The backup client requests the <code>drive.file</code> permission. This permits access to files created by the app or explicitly made available to it. The backup workflow uses a dedicated private folder and ownership marker.</p><p>Backup contents are encrypted before they are uploaded. The account owner keeps the recovery passphrase separately.</p></section>
+<section><h2>Optional monitoring</h2><p>A separately authorized, owner-operated monitor can check the application's public availability and backup receipts, then email incident and recovery notices to the owner's selected address.</p></section>
+<section><h2>Support</h2><p>Use the user-support email displayed on this application's Google OAuth consent screen. Do not send passwords, authorization codes, OAuth tokens or decrypted backups.</p></section>
+<footer><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a></footer>
+</main></body></html>
